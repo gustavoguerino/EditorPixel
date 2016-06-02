@@ -1,0 +1,29 @@
+# Cores seguindo o padrão RGB
+# Somente as 10 primeiras cores serão usadas no editor.
+# A ultima cor (11) faz referencia a cor do "transparente"
+# http://erikasarti.net/html/tabela-cores/
+249,222,144
+135,26,19
+151,222,222
+1,1,1
+12,215,22
+211,65,7
+255,104,71
+46,139,87
+0,100,0
+0,128,0
+189,83,107
+218,165,32
+184,134,11
+139,69,19
+160,82,45
+188,143,143
+205,133,63
+210,105,30
+244,164,96
+255,222,173
+255,222,173
+255,222,173
+255,222,173
+255,222,173
+255,0,255,200

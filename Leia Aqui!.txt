@@ -1,0 +1,1 @@
+Antes de usar o editor, selecione suas cores e as coloque no arquivo 'coresentrada.txt' seguindo o padrão do arquivo, apos isso rode em um terminal com ruby e gosu o comando: 'ruby editor.rb', configure de acordo com o seu display do Mars Mips e após realizar sua arte aperte em gerar e pegue o codigo dentro do arquivo: 'saida.txt'
