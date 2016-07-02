@@ -80,7 +80,11 @@ def carregarCodigo()
 				blue = blue.to_i(16)
 				corcarrega = Gosu::Color.rgba(red,green,blue,255)
 			elsif(arraydalinha[0] == "sw")
-				$arraycor[(pixel / $pixellargura)][(pixel % $pixellargura)] = corcarrega
+				puts "#{pixel}  #{(pixel / $pixellargura).to_i} #{(pixel % $pixellargura).to_i} #{$pixellargura}"
+				corcarrega = Gosu::Color.rgba(red,green,blue,255)
+				valorx = (pixel/4) % $pixellargura
+				valory = (pixel/4) / $pixellargura
+				$arraycor[valorx.to_i][valory.to_i] = corcarrega
 			end
 		end
 	end
