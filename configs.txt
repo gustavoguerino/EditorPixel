@@ -1,0 +1,8 @@
+LarguraXAltura= 128
+TamanhoDoPixel= 2
+
+Mantenha a formatação do arquivo, PixelsVertical e PixelsHorizontal podem receber esses valores:
+64 - 128 - 256 - 512 - 1024
+TamanhoDoPixel recebe:
+1 - 2 - 4 - 8 - 16 - 32
+Valor incorreto o programa encerrara!
