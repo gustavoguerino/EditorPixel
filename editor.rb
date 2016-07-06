@@ -1,6 +1,5 @@
 ﻿$LOAD_PATH << '.'
 require 'gosu'
-
 def limpartela(linhas)
 	for x in 0..linhas do 
 		puts " "
@@ -81,6 +80,7 @@ class Interface < Gosu::Window
 		@corgerar = Gosu::Color.rgba(0,0,0,255)
 		@corcontorno = Gosu::Color.rgba(255,255,255,255)
 		for z in arraylinhas do
+			z.encode!('UTF-8', 'binary', invalid: :replace, undef: :replace, replace: '')
 			arraylinha = z.split(",")
 			if arraylinha.size == 3
 				red  = arraylinha[0].to_i
@@ -342,6 +342,7 @@ end
 def carregarConfigs()
 	arrayleitura = File.readlines("configs.txt")
 	for z in arrayleitura do
+		z.encode!('UTF-8', 'binary', invalid: :replace, undef: :replace, replace: '')
 		dividivoconf = z.split(" ")
 		if(dividivoconf[0] == "LarguraXAltura=")
 		$largura = dividivoconf[1].to_i
