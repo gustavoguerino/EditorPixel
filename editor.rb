@@ -148,8 +148,13 @@ class Interface < Gosu::Window
 												980, 			70, 				@corcontorno,			# Superior Direito
 												980, 			100, 				@corcontorno,			#	Inferior Esquerdo
 												920, 			100, 				@corcontorno, 7		#	Inferior Direito	
-		@font.draw("2px", 925,40, 9, 1.0, 1.0, 0xff000000)	
-		@font.draw("3px", 925,80, 9, 1.0, 1.0, 0xff000000)			
+		draw_quad 								920, 			110, 				@corcontorno, 		# Superior Esquerdo
+												980, 			110, 				@corcontorno,			# Superior Direito
+												980, 			140, 				@corcontorno,			#	Inferior Esquerdo
+												920, 			140, 				@corcontorno, 7		#	Inferior Direito	
+		@font.draw("1px", 925,40, 9, 1.0, 1.0, 0xff000000)	
+		@font.draw("2px", 925,80, 9, 1.0, 1.0, 0xff000000)	
+		@font.draw("3px", 925,120, 9, 1.0, 1.0, 0xff000000)			
 		for x in 0..$pixellargura-1 do
 			for y in 0..$pixelaltura-1 do
 							tex = x * $tamanhopixel + 100
@@ -245,10 +250,14 @@ class Interface < Gosu::Window
 			end
 			if((self.mouse_y >= 0) and (self.mouse_y <= $maxlargura) and (self.mouse_x >= 900) and (self.mouse_x <= 1000))
 				if((self.mouse_x >= 900) and (self.mouse_x <= 1000) and (self.mouse_y >= 30) and (self.mouse_y <= 60))
+					puts "Pincel 1px"
+					$pincel = 1
+				end	
+				if((self.mouse_x >= 900) and (self.mouse_x <= 1000) and (self.mouse_y >= 70) and (self.mouse_y <= 100))
 					puts "Pincel 2px"
 					$pincel = 2
 				end	
-				if((self.mouse_x >= 900) and (self.mouse_x <= 1000) and (self.mouse_y >= 70) and (self.mouse_y <= 100))
+				if((self.mouse_x >= 900) and (self.mouse_x <= 1000) and (self.mouse_y >= 110) and (self.mouse_y <= 140))
 					puts "Pincel 3px"
 					$pincel = 3
 				end	
